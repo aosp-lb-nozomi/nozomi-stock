@@ -1,7 +1,3 @@
-ui_print("*********************************************");
-ui_print("Installing Deodexed+Zipaligned 6.2.B.1.96 FW");
-ui_print("*********************************************");
-show_progress(0.1, 0);
 ui_print("- Formatting /system");
 format("ext4", "EMMC", "/dev/block/mmcblk0p12", "0", "/system");
 ui_print("- Copying to /system");
@@ -101,4 +97,4 @@ ui_print("- Unmounting /system");
 unmount("/system");
 ui_print("- Formatting /cache");
 format("ext4", "EMMC", "/dev/block/mmcblk0p13", "0", "/cache");
-ui_print("- Enjoy!");
+ui_print("- Done!");
